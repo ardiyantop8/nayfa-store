@@ -2,6 +2,8 @@ import { Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Too
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import SettingsIcon from "@mui/icons-material/Settings";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import LocalMallIcon from '@mui/icons-material/LocalMall';
+import LiveHelpIcon from '@mui/icons-material/LiveHelp';
 import { useRouter } from "next/router";
 
 const drawerWidth = 240;
@@ -11,8 +13,8 @@ const Sidebar = () => {
 
   const menuItems = [
     { text: "Dashboard", icon: <DashboardIcon />, path: "/dashboard" },
-    { text: "Daftar Produk", icon: <SettingsIcon />, path: "/list-produk" },
-    { text: "Pusat Bantuan", icon: <SettingsIcon />, path: "/pusat-bantuan" },
+    { text: "Daftar Produk", icon: <LocalMallIcon />, path: "/list-produk" },
+    { text: "Pusat Bantuan", icon: <LiveHelpIcon />, path: "/pusat-bantuan" },
     { text: "Settings", icon: <SettingsIcon />, path: "/settings" },
     { text: "Logout", icon: <ExitToAppIcon />, path: "/login" },
   ];
