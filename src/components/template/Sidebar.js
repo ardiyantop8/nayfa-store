@@ -11,6 +11,8 @@ const Sidebar = () => {
 
   const menuItems = [
     { text: "Dashboard", icon: <DashboardIcon />, path: "/dashboard" },
+    { text: "Daftar Produk", icon: <SettingsIcon />, path: "/list-produk" },
+    { text: "Pusat Bantuan", icon: <SettingsIcon />, path: "/pusat-bantuan" },
     { text: "Settings", icon: <SettingsIcon />, path: "/settings" },
     { text: "Logout", icon: <ExitToAppIcon />, path: "/login" },
   ];
