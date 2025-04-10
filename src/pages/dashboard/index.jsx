@@ -24,13 +24,13 @@ export default function DashboardPage() {
   }
   return (
     <DashboardLayout>
-        <Typography variant="h4" gutterBottom>
+        <Typography className="md:px-4" variant="h4" gutterBottom>
             Dashboard Admin
         </Typography>
             {/* <Typography>Selamat datang di halaman dashboard!</Typography> */}
         <div className="xl:grid xl:grid-cols-4 md:grid md:grid-cols-2">
           {ListCardDashboard.map((item) => (
-            <div className="bg-white rounded-xl w-3xs h-3xs px-5 py-3 my-3">
+            <div className="bg-white rounded-xl xl:w-3xs h-3xs px-5 py-3 my-3 md:mx-4">
               <div className="flex justify-between py-3">
                   <div className="bg-[#F2F7FF] px-2 py-2 rounded-xl">{item.icon}</div>
                   <div className="pr-4">

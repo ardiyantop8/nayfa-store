@@ -59,8 +59,8 @@ const Sidebar = () => {
                 sx={{
                   ...(isActive && {
                     bgcolor: "black",
-                    color: "white",
-                    "& .MuiListItemIcon-root": { color: "white" },
+                    color: "black",
+                    "& .MuiListItemIcon-root": { color: "black" },
                   }),
                 }}
               >
@@ -78,16 +78,16 @@ const Sidebar = () => {
     <>
       {/* AppBar untuk tombol toggle di mobile */}
       {isMobile && (
-        <AppBar position="fixed" sx={{ zIndex: theme.zIndex.drawer + 1 }}>
+        <AppBar position="fixed">
           <Toolbar>
             <IconButton
-              color="inherit"
-              edge="start"
+              color="red"
+              // edge="start"
               onClick={handleDrawerToggle}
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" noWrap>
+            <Typography className="text-black" variant="h6" noWrap>
               Ardi Store
             </Typography>
           </Toolbar>
